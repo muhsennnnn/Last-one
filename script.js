@@ -44,7 +44,7 @@ document.getElementById("order-form").addEventListener("submit", function (e) {
   });
 
   const encodedMessage = encodeURIComponent(message);
-  const whatsappNumber = "964XXXXXXXXXX"; // <-- استبدله لاحقًا برقمك الحقيقي
+  const whatsappNumber = "9647704159475"; // <-- استبدله لاحقًا برقمك الحقيقي
 
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
   window.open(whatsappURL, "_blank");

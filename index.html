@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أعلاف السالم</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">🐥 أعلاف السالم</div>
+      <nav>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#products">المنتجات</a></li>
+          <li><a href="#cart">سلة الطلب</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>نوفر لك أفضل أعلاف الطيور</h1>
+      <p>جودة مضمونة وأسعار تنافسية لجميع أنواع الطيور</p>
+      <a href="#products" class="btn">تصفح المنتجات</a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>منتجاتنا</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=حنطة" alt="حنطة">
+        <h3>حنطة</h3>
+        <p>علف طبيعي غني بالألياف</p>
+        <span>600 دينار / كيلو</span>
+        <button onclick="addToCart('حنطة', '600 دينار / كيلو')">أضف إلى السلة</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=شعير" alt="شعير">
+        <h3>شعير</h3>
+        <p>غذاء مثالي للطاقة والنمو</p>
+        <span>900 دينار / كيلو</span>
+        <button onclick="addToCart('شعير', '900 دينار / كيلو')">أضف إلى السلة</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=كوكتيل" alt="كوكتيل">
+        <h3>خلطة كوكتيل</h3>
+        <p>25 كغم + توصيل</p>
+        <span>45,000 دينار</span>
+        <button onclick="addToCart('خلطة كوكتيل', '45,000 دينار / 25 كغم + توصيل')">أضف إلى السلة</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=غندورة" alt="غندورة">
+        <h3>خلطة غندورة</h3>
+        <p>25 كغم + توصيل</p>
+        <span>45,000 دينار</span>
+        <button onclick="addToCart('خلطة غندورة', '45,000 دينار / 25 كغم + توصيل')">أضف إلى السلة</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=حب+صيفية" alt="حب صيفية">
+        <h3>خلطة طيور الحب (صيفية)</h3>
+        <p>25 كغم + توصيل</p>
+        <span>35,000 دينار</span>
+        <button onclick="addToCart('خلطة طيور الحب صيفية', '35,000 دينار / 25 كغم + توصيل')">أضف إلى السلة</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=حب+شتوية" alt="حب شتوية">
+        <h3>خلطة طيور الحب (شتوية)</h3>
+        <p>25 كغم + توصيل</p>
+        <span>37,000 دينار</span>
+        <button onclick="addToCart('خلطة طيور الحب شتوية', '37,000 دينار / 25 كغم + توصيل')">أضف إلى السلة</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=بروتين" alt="بروتين">
+        <h3>بروتين دجاج وأفراخ</h3>
+        <p>غني بالأحماض الأمينية للنمو</p>
+        <span>800 دينار / كيلو</span>
+        <button onclick="addToCart('بروتين دجاج وأفراخ', '800 دينار / كيلو')">أضف إلى السلة</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart-section" id="cart">
+    <h2>سلة الطلب</h2>
+    <div id="cart-items"></div>
+    <form id="order-form">
+      <input type="text" id="customer-name" placeholder="الاسم الكامل" required>
+      <input type="tel" id="customer-phone" placeholder="رقم الهاتف" required>
+      <button type="submit">إرسال الطلب عبر واتساب</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 أعلاف السالم. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
